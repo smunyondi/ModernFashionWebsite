@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Fashion Designs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">Modern Fashion</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping.html">Shop</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+      <li><button class="signup-btn" onclick="showForm()">Sign Up</button></li>
+    </ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover Modern Fashion</h1>
+    <button onclick="location.href='auth.html'">Shop Now</button>
+  </section>
+
+  <!-- Modal for Sign-Up Form -->
+  <div class="modal hidden" id="signUpModal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeForm()">&times;</span>
+      <h2>Sign Up to Continue</h2>
+      <form id="authForm">
+        <div class="tooltip">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <span id="nameNotification" class="tooltip-text">Please fill out your name first.</span>
+        </div>
+
+        <div class="tooltip">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required disabled />
+          <span id="emailNotification" class="tooltip-text">Please enter a valid email address.</span>
+        </div>
+
+        <div class="tooltip">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required disabled />
+          <span id="passwordNotification" class="tooltip-text">Please meet all password requirements.</span>
+        </div>
+
+        <div id="passwordSymbols" class="symbols">
+          <span id="uppercaseSymbol" class="symbol invalid">ABC</span>
+          <span id="lowercaseSymbol" class="symbol invalid">abc</span>
+          <span id="numberSymbol" class="symbol invalid">123</span>
+          <span id="symbolSymbol" class="symbol invalid">&lt;/&gt;</span>
+        </div>
+        <div id="passwordStrength" class="strength-indicator">Password strength: <span id="strengthText">Weak</span></div>
+
+        <button type="submit" id="submitButton" disabled>Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Featured Products -->
+  <section class="featured">
+    <h2>New Arrivals</h2>
+    <div class="gallery">
+      <div class="product">
+        <img src="https://images.pexels.com/photos/31095104/pexels-photo-31095104.jpeg" alt="Yellow Dress" />
+        <p>Yellow Dress - $49.99</p>
+      </div>
+      <div class="product">
+        <img src="https://images.pexels.com/photos/16451446/pexels-photo-16451446.jpeg" alt="Elegant Blouse" />
+        <p>Elegant Blouse - $39.99</p>
+      </div>
+      <div class="product">
+        <img src="https://images.pexels.com/photos/18833185/pexels-photo-18833185.jpeg" alt="Stylish Blazer" />
+        <p>Stylish Blazer - $59.99</p>
+      </div>
+    </div>
+    <button onclick="location.href='auth.html'" class="explore-btn">Explore and Shop</button>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"The designs are stunning! I love the quality."</p>
+      <span>- Jane Doe</span>
+    </div>
+    <div class="testimonial">
+      <p>"Modern Fashion has completely transformed my wardrobe."</p>
+      <span>- John Smith</span>
+    </div>
+  </section>
+
+  <!-- Explore More -->
+  <section class="explore-more">
+    <h2>Explore More</h2>
+    <div class="tabs">
+      <button class="tab" data-tab="1">About Us</button>
+      <button class="tab" data-tab="2">Our Mission</button>
+      <button class="tab" data-tab="3">Contact</button>
+    </div>
+    <div id="tab1" class="tab-content">
+      <p>We are dedicated to bringing you the latest trends in modern fashion.</p>
+    </div>
+    <div id="tab2" class="tab-content">
+      <p>Our mission is to make fashion accessible and sustainable for everyone.</p>
+    </div>
+    <div id="tab3" class="tab-content">
+      <p>Contact us at support@modernfashion.com for any inquiries.</p>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to our newsletter for the latest trends and offers.</p>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="newsletterFeedback" class="feedback"></p>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopButton" class="back-to-top">↑ Back to Top</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <p>&copy; 2025 Modern Fashion. All rights reserved.</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#featured">Featured Products</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#explore-more">Explore More</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="icons/twitter.svg" alt="Twitter" /></a>
+          <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>Modern Fashion is your go-to destination for the latest trends in sustainable and stylish clothing.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

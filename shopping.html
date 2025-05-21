@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">Modern Fashion</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping.html">Shop</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+      <!-- <li><button class="signup-btn" onclick="showForm()">Sign Up</button></li> -->
+    </ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header>
+    <h1>Welcome to Modern Fashion Shopping</h1>
+    <nav class="category-nav">
+      <button onclick="document.getElementById('men-fashion').scrollIntoView({ behavior: 'smooth' })">Men's Fashion</button>
+      <button onclick="document.getElementById('women-fashion').scrollIntoView({ behavior: 'smooth' })">Women's Fashion</button>
+      <button onclick="document.getElementById('children-fashion').scrollIntoView({ behavior: 'smooth' })">Children's Fashion</button>
+    </nav>
+  </header>
+
+  <!-- Men Fashion Section -->
+  <section id="men-fashion" class="products">
+    <h2>Men's Fashion</h2>
+    <div class="gallery">
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/878358/pexels-photo-878358.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Men Style 1" />
+        <p>Classic Suit for Formal Occasions</p>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/1760900/pexels-photo-1760900.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Men Style 2" />
+        <p>Casual Outfit for Everyday Wear</p>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/3317133/pexels-photo-3317133.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Men Style 3" />
+        <p>Trendy Jacket for Winter</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Women Fashion Section -->
+  <section id="women-fashion" class="products">
+    <h2>Women's Fashion</h2>
+    <div class="gallery">
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/13638748/pexels-photo-13638748.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Women Style 1" />
+        <p>Elegant Evening Gown</p>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/30304373/pexels-photo-30304373/free-photo-of-stylish-woman-in-denim-outdoors-with-hat-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Women Style 2" />
+        <p>Casual Denim Outfit</p>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/11588270/pexels-photo-11588270.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Women Style 3" />
+        <p>Stylish Summer Dress</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Children Fashion Section -->
+  <section id="children-fashion" class="products">
+    <h2>Children's Fashion</h2>
+    <div class="gallery">
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/29638235/pexels-photo-29638235/free-photo-of-charming-young-girl-in-pink-dress-in-field.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Children Style 1" />
+        <p>Adorable Pink Dress</p>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/30683064/pexels-photo-30683064/free-photo-of-portrait-of-a-little-girl-in-studio-setting.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Children Style 2" />
+        <p>Comfortable Casual Wear</p>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="photo-container">
+        <img src="https://images.pexels.com/photos/14646100/pexels-photo-14646100.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Children Style 3" />
+        <p>Trendy Winter Jacket</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Back to Top Button -->
+<button id="backToTopButton" class="back-to-top">↑ Back to Top</button>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <p>&copy; 2025 Modern Fashion. All rights reserved.</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#featured">Featured Products</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#explore-more">Explore More</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank"><img src="icons/facebook.svg" alt="Facebook" /></a>
+          <a href="#" target="_blank"><img src="icons/twitter.svg" alt="Twitter" /></a>
+          <a href="#" target="_blank"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>Modern Fashion is your go-to destination for the latest trends in sustainable and stylish clothing.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
